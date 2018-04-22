@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 html {
   position: relative;
   min-height: 100%;
@@ -7,6 +9,11 @@ body {
   background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/circles-dark.png");
   height: 100vh;
 }
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+
 /*  navbar css */
 
 header {
@@ -15,6 +22,7 @@ header {
 
 p {
   color: #777777;
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav.bg-light {
@@ -56,7 +64,8 @@ nav.bg-light {
 .myclass {
   height: 100%;
 }
-.main_content > div {
+
+.main_content>div {
   margin-top: 3em;
   background: white;
 }
@@ -72,17 +81,17 @@ nav.bg-light {
 }
 
 .gray_border {
-  border-top: 2px solid  #cccccc;
+  border-top: 2px solid #cccccc;
 }
 
 /* Selector given from google chrome dev tools : I'm not sure if this was the best way to go */
 
-body > section > div > div:nth-child(2) > div > img {
+body>section>div>div:nth-child(2)>div>img {
   max-height: 200px;
   max-width: 200px;
 }
 
-body > section > div > div:nth-child(2) > div > img {
+body>section>div>div:nth-child(2)>div>img {
   float: left;
   margin-right: 1em;
 }
@@ -93,12 +102,40 @@ body > section > div > div:nth-child(2) > div > img {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
+  height: 60px;
+  /* Set the fixed height of the footer here */
+  line-height: 60px;
+  /* Vertically center the text there */
   background-color: #666666;
   text-align: center;
 }
 
 .darker_text {
   color: white;
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  background-color: #4aaaa5;
+  border-color: #4aaaa5;
+}
+
+.card-img-overlay {
+  padding: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 10px;
+  background: #4aaaa5;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+.card {
+  border: 0px;
+  margin-bottom: 2em;
 }
