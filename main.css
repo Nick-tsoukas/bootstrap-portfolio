@@ -1,0 +1,104 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/circles-dark.png");
+  height: 100vh;
+}
+/*  navbar css */
+
+header {
+  background: white;
+}
+
+p {
+  color: #777777;
+}
+
+nav.bg-light {
+  background: white !important;
+}
+
+.navbar-right {
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  background: #4aaaa5;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  padding: .5em;
+}
+
+.navbar {
+  padding-left: 0;
+}
+
+.no_padding_left {
+  padding-left: 0;
+}
+
+/* end of navbar css */
+
+/* main content section css */
+
+.main_content {
+  height: 75%;
+}
+
+.myclass {
+  height: 100%;
+}
+.main_content > div {
+  margin-top: 3em;
+  background: white;
+}
+
+.section_title {
+  color: #4aaaa5;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.border_top {
+  border-top: 3px solid #dddddd;
+}
+
+.gray_border {
+  border-top: 2px solid  #cccccc;
+}
+
+/* Selector given from google chrome dev tools : I'm not sure if this was the best way to go */
+
+body > section > div > div:nth-child(2) > div > img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+body > section > div > div:nth-child(2) > div > img {
+  float: left;
+  margin-right: 1em;
+}
+
+/* End of Selctors provided from dev tools */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #666666;
+  text-align: center;
+}
+
+.darker_text {
+  color: white;
+}
