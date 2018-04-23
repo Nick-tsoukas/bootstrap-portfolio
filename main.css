@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 html {
   position: relative;
   min-height: 100%;
@@ -10,11 +9,11 @@ body {
   height: 100vh;
 }
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*  navbar css */
+/*  navbar css note: I can't get the hamburger menu to show up for some reason... */
 
 header {
   background: white;
@@ -36,7 +35,6 @@ nav.bg-light {
 .navbar-brand {
   background: #4aaaa5;
   height: 100%;
-  position: absolute;
   display: flex;
   align-items: center;
 }
@@ -47,10 +45,20 @@ nav.bg-light {
 
 .navbar {
   padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  height: 80px;
 }
 
 .no_padding_left {
   padding-left: 0;
+}
+
+.test {
+  position: relative;
 }
 
 /* end of navbar css */
@@ -58,7 +66,11 @@ nav.bg-light {
 /* main content section css */
 
 .main_content {
-  height: 75%;
+  height: auto;
+}
+
+.padding_bottom {
+  padding-bottom: 2em;
 }
 
 .myclass {
@@ -84,7 +96,7 @@ nav.bg-light {
   border-top: 2px solid #cccccc;
 }
 
-/* Selector given from google chrome dev tools : I'm not sure if this was the best way to go */
+/* Selector given from google chrome dev tools to target image : I'm not sure if this was the best way to go */
 
 body>section>div>div:nth-child(2)>div>img {
   max-height: 200px;
@@ -99,13 +111,11 @@ body>section>div>div:nth-child(2)>div>img {
 /* End of Selctors provided from dev tools */
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px;
-  /* Set the fixed height of the footer here */
   line-height: 60px;
-  /* Vertically center the text there */
   background-color: #666666;
   text-align: center;
 }
@@ -138,4 +148,14 @@ body>section>div>div:nth-child(2)>div>img {
 .card {
   border: 0px;
   margin-bottom: 2em;
+}
+
+
+/* One media query for about me page for mobile: image will span 100 viewport width  */
+
+@media only screen and (max-width: 600px) {
+    body>section>div>div:nth-child(2)>div>img {
+        min-width: 100%;
+        margin-bottom: 1em;
+    }
 }
